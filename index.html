@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="Styles/style.css">
+       
+</head>
+<body>
+    <header class="header">
+        <h1 class="main-heading">Rock <br> Paper <br> Scissors </h1>
+        <div class="header-score-box">
+            <h4 class="heading-score">Score</h4>
+            <span class="score-value">0</span>
+        </div>
+    </header>
+    <!-- header section closes here -->
+
+
+    <main class="container">
+
+        <div class="rock-paper-scissor-container">
+            <!-- your-choice -->
+            <p class="non-active " id="userChoiceText">You Choose</p>
+            <!-- house-choice -->
+            <p class="non-active " id="houseChoiceText">House Choose</p>
+
+            <!-- when your choose one the class should be active and other items class shoul be non active and  -->
+
+            <!-- Rock -->
+            <div class="rock-container">
+                <div class="big-circle-dark-blue">
+                    <div class="big-circle-light-blue">
+                        <div class="tiny-circle-dark-white">
+                            <div class="tiny-circle-light-white">
+                                <img src="Assets/Icons/icon-rock.svg" alt="rock-icon" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paper -->
+            <div class="paper-container" onclick="userClick('paper')" >
+                <div class="big-circle-dark-yellow">
+                    <div class="big-circle-light-yellow">
+                        <div class="tiny-circle-dark-white">
+                            <div class="tiny-circle-light-white">
+                                <img src="Assets/Icons/icon-paper.svg" alt="paper-icon" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scissors -->
+            <div class="scissor-container" onclick="userClick('scissor')">
+                <div class="big-circle-dark-red">
+                    <div class="big-circle-light-red">
+                        <div class="tiny-circle-dark-white">
+                            <div class="tiny-circle-light-white">
+                                <img src="Assets/Icons/icon-scissor.svg" alt="scissor-icon" class="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <!-- winner-active -->
+        <p class="non-active" id="winner-text"></p>
+        <!-- play-again-active -->
+        <button class="non-active" id="play-again">Play Again</button>
+        
+        
+    </main>
+
+<script src="Scripts/rockpaperscissor.js"></script>
+</body>
+</html>
